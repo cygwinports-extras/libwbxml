@@ -1,0 +1,9 @@
+--- origsrc/libwbxml-0.10.1/libwbxml2.pc.cmake	2009-01-06 10:06:00.000000000 -0600
++++ src/libwbxml-0.10.1/libwbxml2.pc.cmake	2009-01-11 01:52:20.687737800 -0600
+@@ -6,6 +6,5 @@ includedir=@LIBWBXML_INCLUDE_DIR@
+ Name: libwbxml2
+ Description: C wbxml library
+ Version: @LIBWBXML_VERSION@
+-Requires: libxml-2.0 >= 2.6
+ Libs: -L${libdir} -lwbxml2
+ Cflags: -I${includedir}
