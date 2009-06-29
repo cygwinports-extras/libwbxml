@@ -1,5 +1,5 @@
 category: Text
-requires: cygwin libexpat1
+requires: libexpat1
 external-source: wbxml2
 sdesc: "Wireless Binary XML parser (runtime library)"
 ldesc: "The WBXML Library is a C library for handling WBXML (Wireless 
