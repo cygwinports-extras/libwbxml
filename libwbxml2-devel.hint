@@ -1,8 +1,0 @@
-category: Text
-requires: libwbxml2_0
-external-source: wbxml2
-sdesc: "Wireless Binary XML parser (libdevel)"
-ldesc: "The WBXML Library is a C library for handling WBXML (Wireless 
-Binary XML) documents. It consists of a WBXML Parser (with a SAX like 
-interface), a generic WBXML Encoder, and an internal representation of 
-the document (WBXMLTree)."

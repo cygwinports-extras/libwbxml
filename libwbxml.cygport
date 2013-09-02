@@ -1,0 +1,25 @@
+inherit cmake
+
+NAME="libwbxml"
+VERSION=0.10.9
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Wireless Binary XML parser library"
+DESCRIPTION="The WBXML Library is a C library for handling WBXML (Wireless
+Binary XML) documents. It consists of a WBXML Parser (with a SAX like
+interface), a generic WBXML Encoder, and an internal representation of the
+document (WBXMLTree)."
+HOMEPAGE="http://libwbxml.opensync.org/"
+SRC_URI="mirror://sourceforge/libwbxml/libwbxml-${VERSION}.tar.bz2"
+PATCH_URI="0.10.9-no-undefined.patch
+           0.10.1-pkgconfig-deps.patch"
+
+PKG_NAMES="${NAME} libwbxml2_0 libwbxml2-devel"
+libwbxml_CATEGORY="Text"
+libwbxml_SUMMARY=${SUMMARY/library/utilities}
+libwbxml_CONTENTS="usr/bin/*.exe usr/share/doc/"
+libwbxml2_0_CONTENTS="usr/bin/cygwbxml2-0.dll"
+libwbxml2_devel_CONTENTS="usr/include/ usr/lib/"
+
+CYGCMAKE_ARGS="-DENABLE_INSTALL_DOC=NO"
+DOCS="GNU-LGPL"
